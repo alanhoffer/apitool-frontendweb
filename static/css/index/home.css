@@ -1,0 +1,578 @@
+html {
+    scroll-behavior: smooth;
+    margin: auto;
+  }
+body{ 
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin:auto;
+    width:100%;
+    height: 2800px;
+    
+}
+
+/* -------------------------- MAIN  SECTION --------------------------*/
+
+div.content-main{
+    background-image: url("/static/img/main/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 27%;
+}
+
+/* -------------------------- TOP  SECTION --------------------------*/
+
+div.content-main div.topbar{
+    width: 80%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* -------------------------- TOP LEFT SECTION --------------------------*/
+
+div.topbar-left div.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-left div.logo a{
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 2px;
+}
+div.topbar-left div.logo img{
+    margin-top: 2px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+div.topbar-left div.logo p{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin-left: 10px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+}
+
+/* -------------------------- TOP RIGHT SECTION --------------------------*/
+
+div.topbar-right div.navbar{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-right div.navbar ul{
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+div.topbar-right div.navbar ul li{
+    margin-left: 40px;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-right div.navbar ul li a{ 
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+div.topbar-right div.navbar ul li a.login-button{
+    background-color: #ffffff;
+    margin-left: 30px;
+    border-radius: 6px;
+    color: #5372DD;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* -------------------------- NOTICE SECTION --------------------------*/
+
+div.content-main div.main-notice{
+    width: 1200px;
+    height: 85%;
+    margin: auto;
+}
+
+div.main-notice{    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------- NOTICE LEFT SECTION --------------------------*/
+
+div.main-notice div.notice-left{    
+    width: 48%;
+    margin-right: 2%;
+    height: 60%;
+    float: left;
+    color: white;
+}
+div.notice-left div.notice-title{
+
+}
+div.notice-left div.notice-description{
+    margin-top: 5%;
+}
+div.notice-left div.notice-buttons{
+    margin-top: 7%;
+    width: 100%;
+    height: 30%;
+}
+div.notice-buttons button.buttons-android{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    padding:10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 3px;
+    background-color: #36e196;
+    border: #36e196 2px solid;
+}
+div.notice-buttons button.buttons-android:hover {
+    background-color: #36e196;
+    color:white;
+  }
+
+div.notice-buttons button.buttons-web{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color:#5071E3;
+    font-size: 16px;
+    font-weight: 500;
+    padding:10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: white;
+    border: #ffffff 2px solid;
+}
+div.notice-buttons button.buttons-web:hover {
+    background-color: #ffffff;
+    color: #5372DD;
+  }
+
+/* -------------------------- NOTICE RIGHT SECTION --------------------------*/
+
+div.main-notice div.notice-right{    
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+div.notice-right div.notice-image img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+}
+
+
+/* -------------------------- KNOW US  SECTION --------------------------*/
+
+div.block-know-us{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+div.content-know-us{
+    width: 1200px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* -------------------------- KNOW US LEFT SECTION --------------------------*/
+
+div.content-know-us div.know-us-left{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.know-us-left  img{
+    width: 100%;
+    height: 80%;
+    border-radius: 3px;
+
+}
+
+/* -------------------------- KNOW US RIGHT SECTION --------------------------*/
+
+div.content-know-us div.know-us-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.know-us-right div.know-us-information{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+div.know-us-right div.know-us-information div.know-us-title h5{
+    color: #F3B202;
+    padding: 0px;
+    margin: 0px;
+}
+div.know-us-right div.know-us-information div.know-us-title h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.know-us-right div.know-us-information div.know-us-buttons{
+    margin-top: 5%;
+
+}
+
+div.know-us-right div.know-us-information div.know-us-buttons button{
+    margin-top: 5%;
+    padding-left: 15px;
+    padding-right:15px;
+    padding: 15px;
+    background-color: #5372DD;
+    color:white;
+    border: #5372DD 2px solid;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+div.know-us-right div.know-us-information div.know-us-buttons button:hover{
+    background-color: #6284ff;
+    border: #6284ff 2px solid;
+    color:white;
+}
+
+/* -------------------------- ACHIEVEMENTS SECTION --------------------------*/
+
+div.block-achievements{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    background-color: #fafafafa;
+}
+div.content-achievements{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+div.content-achievements div.achievements-title{
+    width: 100%;
+    height: 10%;
+}
+div.content-achievements div.achievements-box{
+    width: 99%;
+    height: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+
+div.content-achievements div.achievements-title h5{
+    color:#F3B202;
+    margin: 0%;
+    padding: 0%;
+}
+div.content-achievements div.achievements-title h2{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+div.achievements-box div.achievements-card{
+    border-radius: 3px;
+    height: 120px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.achievements-card div.card-image{
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    justify-content: center;
+    display: flex;
+    height: 90%;
+    width: 25%;
+
+}
+div.achievements-card div.card-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.achievements-card div.card-text p.card-title{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4%;
+}
+div.achievements-card div.card-text p.card-description{
+    color: rgb(139, 139, 139);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0.1%;
+}
+
+
+/* -------------------------- SERVICES  SECTION --------------------------*/
+
+div.block-services{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+}
+div.content-services{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.services-title{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+div.services-title h2{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+div.services-title h5{
+    width: 100%;
+    margin: 0%;
+    margin-top: 10px;
+    padding: 0%;
+    color:#F3B202;
+    
+}
+div.services-box{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------- MAP SECTION --------------------------*/
+div.block-map{
+    width: 100%;
+    height: 18%;
+    display: flex;
+}
+div.map-container{
+    width: 1200px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+div.map-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.map-right{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.map-right img {
+    width: 100%;
+    height: 60%;
+}
+div.map-left h6{
+    color: #F3B202;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* -------------------------- FOOTER SECTION --------------------------*/
+
+
+div.footer-block{
+
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.footer-content{
+    background-color: #5372DD;
+    width: 900px;
+    border-radius: 3px;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div.footer-block div.footer-information{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.footer-block div.footer-image{
+    width: 30%;
+    height: 100%;
+}
+div.footer-left{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.footer-right{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer-information div.footer-description{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.footer-information div.footer-buttons input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+div.footer-information div.footer-buttons input:focus {
+    border: 3px solid #555;
+}
+div.footer-left div.footer-information{
+    align-items: flex-start;
+
+    
+}
+div.footer-right div.footer-information{
+    align-items: flex-end;
+    
+}
+div.footer-left div.footer-information div.footer-buttons button{
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-top:2%;
+    background-color: #36e196;
+    color:white;
+    border: #36e196 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}
+div.footer-right div.footer-information div.footer-buttons button{
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-top:2%;
+    margin-left:2%;
+    background-color: #454545;
+    color:white;
+    border: #454545 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}
+
+/* -------------------------- FOLLOW   SECTION --------------------------*/
+
+
+div.follow-title{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+div.follow-item{
+    margin: 15px;
+    margin-left:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.follow-item ion-icon{
+    font-size: 32px;
+    color:#e4e4e4f3;
+}
+
+div.follow-item:hover ion-icon{
+    font-size: 32px;
+    color:white;
+}
+
+

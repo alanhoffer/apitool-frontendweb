@@ -1,0 +1,96 @@
+{% macro selectLogin() %}
+<div class="right-top">
+    <div class="right-title">BIENVENIDO A</div>
+    <div class="right-logo">
+        <img src="{{url_for('static', filename='img/main/logo2.png')}}" alt="logo">
+        <p>APITOOL</p>
+    </div>
+</div>
+<div class="right-middle">
+    <div class="right-form">
+        <form action="{{url_for('login')}}" method="post">
+            <div class="username-input">
+                <p>Usuario</p>
+                <input class="input" type="text" id="username"  name="username" placeholder="Usuario">
+            </div>
+            <div class="password-input">
+                <p>Contraseña</p>
+                <input class="input" type="password" id="password"  name="password" placeholder="Contraseña">
+            </div>
+            <div class="login-summit">
+                <input class="submit" type="submit" value="Login">
+            </div>
+            <div class="right-forgotten"> 
+                <a href="{{url_for('login')}}">Olvisdaste la contraseña?</a>
+            </div>
+        </form>
+    </div> 
+</div>
+      
+<div class="right-bottom"> 
+    <a onclick="authSelector(1)">No tienes cuenta? Creala ahora!</a>
+</div>
+
+
+{% endmacro %}
+
+{% macro selectRegister() %}
+<div class="right-top">
+    <div class="right-title">BIENVENIDO A</div>
+    <div class="right-logo">
+        <img src="{{url_for('static', filename='img/main/logo2.png')}}" alt="logo">
+        <p>APITOOL</p>
+    </div>
+</div>
+<div class="right-middle">
+    <div class="right-form">
+        <form action="{{url_for('register')}}" method="POST">
+            <div id="register-first" class="register-first">
+                <div class="username-input">
+                    <p>Username</p>
+                    <input class="input" type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="password-input">
+                    <p>Password</p>
+                    <input class="input" type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="email-input">
+                    <p>Email</p>
+                    <input class="input" type="text" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="register-button" onclick="authSelector(2)">
+                    <a class="register-next" >SIGUIENTE</a>
+                </div>
+            </div>
+            <div id="register-second" class="register-second">
+                <div class="name-input">
+                    <p>Nombre</p>
+                    <input class="input" type="text" id="name" name="name"  placeholder="Nombre">
+                </div>
+                <div class="age-input">
+                    <p>Edad</p>
+                    <input class="input" type="text" id="age" name="age" placeholder="Edad">
+                </div>
+                <div class="gender-input">
+                    <p>Sexo</p>
+                    <input class="input" type="text" id="gender" name="gender" placeholder="Sexo">
+                </div>
+                <div class="register-button" onclick="authSelector(3)">
+                    <a class="register-back">ATRAS</a>
+                </div>
+            </div>
+            <div id="register" class="register-summit">
+                <input class="submit" type="submit" value="Register">
+            </div>
+        </form>
+    </div> 
+</div>
+      
+<div class="right-bottom"> 
+    <a onclick="authSelector(0)">Ya tienes cuenta? Inicia ahora!</a>
+</div>
+
+
+{% endmacro %}
+    
+    

@@ -1,0 +1,43 @@
+{% extends './index/layout.html'%}
+{% from "./login/login-macros.html" import selectLogin, selectRegister  %}
+
+{% block head%}
+    <title>asdasd</title>
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login/login.css')}}">    
+    <script src="{{url_for('static', filename='scripts/login.js')}}"></script>
+{% endblock %}
+
+
+
+{%block body%}
+
+    <div class="login-block">
+        <div class="login-left">
+            <div class="left-image">
+                <img src="{{url_for('static', filename='img/login/login-notice.png')}}" alt="asdasd">
+            </div>
+            <div class="left-description">
+                <p>Organizador de Colmenares</p>
+                <p>Bienvenido a APITOOL, esperamos que pueda aprovechar de todas las herramientas que tenemos para brindarles</p>
+            </div>
+            <div class="left-slider">
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                  </div>
+            </div>
+        </div>
+        <div class="login-right">
+            <div id="login" class="show-login">
+                {{selectLogin()}}
+            </div>
+            <div id="register" class="show-register">
+                {{selectRegister()}}
+            </div>
+        </div>
+    </div>
+
+{%endblock%}
